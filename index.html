@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle Box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body 
+        {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEsEVerdPwfSR9ffehc30Z_FLNkaZheZ1og&s");
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            position: relative;
+            color: white;
+            margin: 0;
+        }
+        body::before 
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+            z-index: 0;
+        }
+        .container 
+        {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+            border: 3px solid rgba(0, 255, 0, 0.5);
+        }
+        a 
+        {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px 20px;
+            display: inline-block;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        a:hover 
+        {
+            color: black;
+            background: #ffcc00;
+            box-shadow: 0 0 10px #ffcc00;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Battle Simulator</h1>
+        <a href="battle_box.html">Enter Battle</a>
+    </div>
+</body>
+</html>
