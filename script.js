@@ -82,9 +82,9 @@ function startBattle() {
     player2 = document.getElementById("player2-select").value;
     if(player1 === player2)
     {
-        alert("please choose different pokemon");
         disableMoves("player1-moves");
         disableMoves("player2-moves");
+        alert("please choose different pokemon");
     }
     document.getElementById("player1-name").innerText = player1.toUpperCase();
     document.getElementById("player2-name").innerText = player2.toUpperCase();
