@@ -80,6 +80,10 @@ function startBattle() {
     backgroundMusic.play();
     player1 = document.getElementById("player1-select").value;
     player2 = document.getElementById("player2-select").value;
+    if(player1 === player2)
+    {
+        alert("please choose different pokemon");
+    }
     document.getElementById("player1-name").innerText = player1.toUpperCase();
     document.getElementById("player2-name").innerText = player2.toUpperCase();
     document.getElementById("player1-img").src = pokemons[player1].img;
